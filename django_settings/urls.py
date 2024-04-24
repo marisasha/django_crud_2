@@ -2,7 +2,7 @@ from django.urls import path
 from django_app import views
 
 urlpatterns = [
-    path('form/',views.form , name="form"),
+    path('',views.home , name="home"),
     path('save_form/',views.save_form , name="save_form"),
     path('statements/',views.statements,name = "statements"),
     path('statement/<str:pk>/',views.statement,name = "statement"),
